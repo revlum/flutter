@@ -57,7 +57,7 @@ allprojects {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
 
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions);
     }
 }
 ```
@@ -96,14 +96,14 @@ ElevatedButton(
 
 ### 3. Check for rewards
 
-To check if the user has earned any rewards, use the `checkReward` method. This method provides a list of offers and the total reward amount. If there are no rewards, the reward value will be 0.
+To check if the user has earned any rewards, use the `checkReward` method. This method provides the total reward amount. You also need to handle possible errors with an error callback.
 
 ```dart
 Future<void> _checkRewards() async {
   try {
     final checkReward = await _offerwallPlugin.checkReward();
-    if (checkReward.offers.isNotEmpty) {
-      print('Reward available: ${checkReward.reward}');
+    if (kDebugMode) {
+      print('Reward: ${checkReward.reward}');
     }
   } on PlatformException catch (e) {
     print('Error during reward check: $e');
@@ -122,85 +122,74 @@ import 'package:flutter/services.dart';
 import 'package:offerwall/offerwall.dart';
 
 void main() {
-   runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-   const MyApp({super.key});
+  const MyApp({super.key});
 
-   @override
-   State<MyApp> createState() => _MyAppState();
+  @override
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-   final _offerwallPlugin = Offerwall();
-   late final AppLifecycleListener _listener;
+  final _offerwallPlugin = Offerwall();
+  late final AppLifecycleListener _listener;
 
-   @override
-   void initState() {
-      super.initState();
-      initOfferwall();
-      _listener = AppLifecycleListener(
-         onResume: () => _checkRewards(),
-      );
-   }
+  @override
+  void initState() {
+    super.initState();
+    initOfferwall();
+    _listener = AppLifecycleListener(
+      onResume: () => _checkRewards(),
+    );
+  }
 
-   Future<void> _checkRewards() async {
-      try {
-         final checkReward = await _offerwallPlugin.checkReward();
-         if (checkReward.offers.isNotEmpty) {
-            if (kDebugMode) {
-               print('Reward available: ${checkReward.reward}');
-            }
-         }
-      } on PlatformException catch (e) {
-         if (kDebugMode) {
-            print('Reward check failed: $e');
-         }
+  Future<void> _checkRewards() async {
+    try {
+      final checkReward = await _offerwallPlugin.checkReward();
+      if (kDebugMode) {
+        print('Reward: ${checkReward.reward}');
       }
-   }
-
-   Future<void> initOfferwall() async {
-      try {
-         await _offerwallPlugin.configure(
-                 apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
-      } on PlatformException catch (e) {
-         if (kDebugMode) {
-            print('Offerwall configuration failed: $e');
-         }
+    } on PlatformException catch (e) {
+      if (kDebugMode) {
+        print('Reward check failed: $e');
       }
-   }
+    }
+  }
 
-   @override
-   Widget build(BuildContext context) {
-      return MaterialApp(
-         home: Scaffold(
-            appBar: AppBar(
-               title: const Text('Offerwall Plugin Example'),
-            ),
-            body: Center(
-               child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                     const Text('Welcome to Revlum Offerwall'),
-                     const SizedBox(height: 20),
-                     ElevatedButton(
-                        onPressed: () => _offerwallPlugin.launch(),
-                        child: const Text('Launch Offerwall'),
-                     ),
-                  ],
-               ),
-            ),
-         ),
-      );
-   }
+  Future<void> initOfferwall() async {
+    try {
+      await _offerwallPlugin.configure(
+          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
+    } on PlatformException catch (e) {
+      if (kDebugMode) {
+        print('Offerwall configuration failed: $e');
+      }
+    }
+  }
 
-   @override
-   void dispose() {
-      _listener.dispose();
-      super.dispose();
-   }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () => _offerwallPlugin.launch(),
+            child: const Text('Launch Offerwall'),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _listener.dispose();
+    super.dispose();
+  }
 }
 ```
-
-For a more elaborate usage example, see the [example project](https://pub.dev/packages/revlum_offerwall/example).

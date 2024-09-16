@@ -32,11 +32,8 @@ class _MyAppState extends State<MyApp> {
   Future<void> _checkRewards() async {
     try {
       final checkReward = await _offerwallPlugin.checkReward();
-      if (checkReward.offers.isNotEmpty) {
-        if (kDebugMode) {
-          print(
-              'checkReward: reward: ${checkReward.reward}');
-        }
+      if (kDebugMode) {
+        print('checkReward: reward: ${checkReward.reward}');
       }
     } on PlatformException catch (e) {
       if (kDebugMode) {
@@ -64,16 +61,9 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text('Running on:'),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () => _offerwallPlugin.launch(),
-                child: const Text('Launch Offerwall'),
-              ),
-            ],
+          child: ElevatedButton(
+            onPressed: () => _offerwallPlugin.launch(),
+            child: const Text('Launch Offerwall'),
           ),
         ),
       ),
