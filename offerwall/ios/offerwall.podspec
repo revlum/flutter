@@ -21,6 +21,15 @@ A new Flutter plugin project.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
 
+  # Download and extract the hosted XCFramework from GitHub
+  s.prepare_command = <<-CMD
+    curl -L -o RevlumOfferwallSDK.xcframework.zip https://github.com/revlum/ios/releases/download/v1.0.0/RevlumOfferwallSDK.xcframework.zip
+    unzip -o RevlumOfferwallSDK.xcframework.zip -d Frameworks/
+  CMD
+
+  # Link the XCFramework
+  s.vendored_frameworks = 'Frameworks/RevlumOfferwallSDK.xcframework'
+
   # If your plugin requires a privacy manifest, for example if it uses any
   # required reason APIs, update the PrivacyInfo.xcprivacy file to describe your
   # plugin's privacy impact, and then uncomment this line. For more information,

@@ -39,7 +39,7 @@ class OfferwallPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                     RevlumOfferwallSdk.configure(apiKey, applicationContext, subId, userId)
                     result.success(null)
                 } else {
-                    result.error("ERROR", "API key is required", null)
+                    result.error("INVALID_ARGUMENTS", "API key is required", null)
                 }
             }
 
@@ -65,7 +65,7 @@ class OfferwallPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                         result.error("ERROR", error.message, null)
                     })
                 } else {
-                    result.error("ERROR", "User ID is required", null)
+                    result.error("INVALID_ARGUMENTS", "User ID is required", null)
                 }
             }
 
@@ -80,7 +80,7 @@ class OfferwallPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                     val rewardJson = gson.toJson(reward)
                     result.success(rewardJson)
                 }, { error ->
-                    result.error("ERROR", error.message, null)
+                    result.error("CHECK_REWARD_ERROR", error.toString(), null)
                 })
             }
 

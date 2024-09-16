@@ -1,0 +1,2257 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ClientError",
+        "printedName": "ClientError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK11ClientErrorC7messageSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK11ClientErrorC7messageSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK11ClientErrorC7messageSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK11ClientErrorC7messageSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ClientError",
+                "printedName": "RevlumOfferwallSDK.ClientError",
+                "usr": "s:18RevlumOfferwallSDK11ClientErrorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18RevlumOfferwallSDK11ClientErrorC7messageACSS_tcfc",
+            "mangledName": "$s18RevlumOfferwallSDK11ClientErrorC7messageACSS_tcfc",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18RevlumOfferwallSDK11ClientErrorC",
+        "mangledName": "$s18RevlumOfferwallSDK11ClientErrorC",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK12NetworkErrorC7messageSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK12NetworkErrorC7messageSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK12NetworkErrorC7messageSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK12NetworkErrorC7messageSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "RevlumOfferwallSDK.NetworkError",
+                "usr": "s:18RevlumOfferwallSDK12NetworkErrorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18RevlumOfferwallSDK12NetworkErrorC7messageACSS_tcfc",
+            "mangledName": "$s18RevlumOfferwallSDK12NetworkErrorC7messageACSS_tcfc",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18RevlumOfferwallSDK12NetworkErrorC",
+        "mangledName": "$s18RevlumOfferwallSDK12NetworkErrorC",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ServerError",
+        "printedName": "ServerError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK11ServerErrorC7messageSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK11ServerErrorC7messageSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK11ServerErrorC7messageSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK11ServerErrorC7messageSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ServerError",
+                "printedName": "RevlumOfferwallSDK.ServerError",
+                "usr": "s:18RevlumOfferwallSDK11ServerErrorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18RevlumOfferwallSDK11ServerErrorC7messageACSS_tcfc",
+            "mangledName": "$s18RevlumOfferwallSDK11ServerErrorC7messageACSS_tcfc",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18RevlumOfferwallSDK11ServerErrorC",
+        "mangledName": "$s18RevlumOfferwallSDK11ServerErrorC",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnknownError",
+        "printedName": "UnknownError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK12UnknownErrorC7messageSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK12UnknownErrorC7messageSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK12UnknownErrorC7messageSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK12UnknownErrorC7messageSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnknownError",
+                "printedName": "RevlumOfferwallSDK.UnknownError",
+                "usr": "s:18RevlumOfferwallSDK12UnknownErrorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18RevlumOfferwallSDK12UnknownErrorC7messageACSS_tcfc",
+            "mangledName": "$s18RevlumOfferwallSDK12UnknownErrorC7messageACSS_tcfc",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18RevlumOfferwallSDK12UnknownErrorC",
+        "mangledName": "$s18RevlumOfferwallSDK12UnknownErrorC",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OfferwallView",
+        "printedName": "OfferwallView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK0B4ViewV4bodyQrvp",
+            "mangledName": "$s18RevlumOfferwallSDK0B4ViewV4bodyQrvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK0B4ViewV4bodyQrvg",
+                "mangledName": "$s18RevlumOfferwallSDK0B4ViewV4bodyQrvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18RevlumOfferwallSDK0B4ViewV",
+        "mangledName": "$s18RevlumOfferwallSDK0B4ViewV",
+        "moduleName": "RevlumOfferwallSDK",
+        "intro_Macosx": "12.0",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CheckReward",
+        "printedName": "CheckReward",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "offers",
+            "printedName": "offers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[RevlumOfferwallSDK.Offer]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Offer",
+                    "printedName": "RevlumOfferwallSDK.Offer",
+                    "usr": "s:18RevlumOfferwallSDK5OfferV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK11CheckRewardV6offersSayAA5OfferVGvp",
+            "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV6offersSayAA5OfferVGvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[RevlumOfferwallSDK.Offer]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Offer",
+                        "printedName": "RevlumOfferwallSDK.Offer",
+                        "usr": "s:18RevlumOfferwallSDK5OfferV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK11CheckRewardV6offersSayAA5OfferVGvg",
+                "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV6offersSayAA5OfferVGvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reward",
+            "printedName": "reward",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK11CheckRewardV6rewardSdvp",
+            "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV6rewardSdvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK11CheckRewardV6rewardSdvg",
+                "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV6rewardSdvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CheckReward",
+                "printedName": "RevlumOfferwallSDK.CheckReward",
+                "usr": "s:18RevlumOfferwallSDK11CheckRewardV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CheckReward",
+                "printedName": "RevlumOfferwallSDK.CheckReward",
+                "usr": "s:18RevlumOfferwallSDK11CheckRewardV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK11CheckRewardV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV2eeoiySbAC_ACtFZ",
+            "moduleName": "RevlumOfferwallSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18RevlumOfferwallSDK11CheckRewardV",
+        "mangledName": "$s18RevlumOfferwallSDK11CheckRewardV",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Offer",
+        "printedName": "Offer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV6statusSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV6statusSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV6statusSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV6statusSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV2idSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV2idSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV2idSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV2idSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV4nameSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV4nameSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV4nameSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV4nameSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "revenue",
+            "printedName": "revenue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV7revenueSdvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV7revenueSdvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV7revenueSdvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV7revenueSdvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reward",
+            "printedName": "reward",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV6rewardSdvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV6rewardSdvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV6rewardSdvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV6rewardSdvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transactionId",
+            "printedName": "transactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV13transactionIdSSvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV13transactionIdSSvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV13transactionIdSSvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV13transactionIdSSvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "time",
+            "printedName": "time",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK5OfferV4times5Int64Vvp",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV4times5Int64Vvp",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK5OfferV4times5Int64Vvg",
+                "mangledName": "$s18RevlumOfferwallSDK5OfferV4times5Int64Vvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Offer",
+                "printedName": "RevlumOfferwallSDK.Offer",
+                "usr": "s:18RevlumOfferwallSDK5OfferV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Offer",
+                "printedName": "RevlumOfferwallSDK.Offer",
+                "usr": "s:18RevlumOfferwallSDK5OfferV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK5OfferV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18RevlumOfferwallSDK5OfferV2eeoiySbAC_ACtFZ",
+            "moduleName": "RevlumOfferwallSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18RevlumOfferwallSDK5OfferV",
+        "mangledName": "$s18RevlumOfferwallSDK5OfferV",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CheckRewardError",
+        "printedName": "CheckRewardError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "missingCheckRewardData",
+            "printedName": "missingCheckRewardData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckRewardError",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                    "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO07missingdE4DatayA2CmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO07missingdE4DatayA2CmF",
+            "moduleName": "RevlumOfferwallSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "missingConversionData",
+            "printedName": "missingConversionData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckRewardError",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                    "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO21missingConversionDatayA2CmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO21missingConversionDatayA2CmF",
+            "moduleName": "RevlumOfferwallSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noConversionsFound",
+            "printedName": "noConversionsFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> (Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO18noConversionsFoundyACSScACmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO18noConversionsFoundyACSScACmF",
+            "moduleName": "RevlumOfferwallSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidApiKey",
+            "printedName": "invalidApiKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> (Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO13invalidApiKeyyACSScACmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO13invalidApiKeyyACSScACmF",
+            "moduleName": "RevlumOfferwallSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rateLimitExceeded",
+            "printedName": "rateLimitExceeded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> (Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO17rateLimitExceededyACSScACmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO17rateLimitExceededyACSScACmF",
+            "moduleName": "RevlumOfferwallSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO",
+        "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RevlumOfferwallSdk",
+        "printedName": "RevlumOfferwallSdk",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RevlumOfferwallSdk",
+                "printedName": "RevlumOfferwallSDK.RevlumOfferwallSdk",
+                "usr": "s:18RevlumOfferwallSDK0aB3SdkC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC6sharedACvpZ",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC6sharedACvpZ",
+            "moduleName": "RevlumOfferwallSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RevlumOfferwallSdk",
+                    "printedName": "RevlumOfferwallSDK.RevlumOfferwallSdk",
+                    "usr": "s:18RevlumOfferwallSDK0aB3SdkC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK0aB3SdkC6sharedACvgZ",
+                "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC6sharedACvgZ",
+                "moduleName": "RevlumOfferwallSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:subId:userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC9configure6apiKey5subId04userI0ySS_SSSgAHtF",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC9configure6apiKey5subId04userI0ySS_SSSgAHtF",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getOfferwallView",
+            "printedName": "getOfferwallView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OfferwallView",
+                "printedName": "RevlumOfferwallSDK.OfferwallView",
+                "usr": "s:18RevlumOfferwallSDK0B4ViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC03getB4ViewAA0bF0VyFZ",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC03getB4ViewAA0bF0VyFZ",
+            "moduleName": "RevlumOfferwallSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSubId",
+            "printedName": "setSubId(subId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC8setSubId03subG0ySSSg_tF",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC8setSubId03subG0ySSSg_tF",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserId",
+            "printedName": "setUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC9setUserIdyySSF",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC9setUserIdyySSF",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkReward",
+            "printedName": "checkReward()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<RevlumOfferwallSDK.CheckReward, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckReward",
+                    "printedName": "RevlumOfferwallSDK.CheckReward",
+                    "usr": "s:18RevlumOfferwallSDK11CheckRewardV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC11checkRewards6ResultOyAA05CheckF0Vs5Error_pGyYaF",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC11checkRewards6ResultOyAA05CheckF0Vs5Error_pGyYaF",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkReward",
+            "printedName": "checkReward(onCheckReward:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckReward) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CheckReward",
+                    "printedName": "RevlumOfferwallSDK.CheckReward",
+                    "usr": "s:18RevlumOfferwallSDK11CheckRewardV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC11checkReward07onCheckF00G5ErroryyAA0hF0Vc_ys0I0_pctF",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC11checkReward07onCheckF00G5ErroryyAA0hF0Vc_ys0I0_pctF",
+            "moduleName": "RevlumOfferwallSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18RevlumOfferwallSDK0aB3SdkC",
+        "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/CoreConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 186,
+      "length": 30,
+      "value": "\"https:\/\/revlum.com\/offerwall\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1202,
+      "length": 21,
+      "value": "\"https:\/\/revlum.com\/\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ServerError.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/UnknownError.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 203,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 13,
+      "value": "\"DAILY_COUNT\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 19,
+      "value": "\"LAST_REQUEST_TIME\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 27,
+      "value": "\"SLIDING_WINDOW_START_TIME\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 13,
+      "value": "\"DAILY_COUNT\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 19,
+      "value": "\"LAST_REQUEST_TIME\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 507,
+      "length": 27,
+      "value": "\"SLIDING_WINDOW_START_TIME\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/CheckRewardResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 13,
+      "value": "\"conversions\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/CheckRewardResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 13,
+      "value": "\"conversions\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 10,
+      "value": "\"offer_id\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 16,
+      "value": "\"transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 10,
+      "value": "\"offer_id\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 16,
+      "value": "\"transaction_id\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/User\/Data\/DataSources\/UserLocalDataSourceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 9,
+      "value": "\"USER_ID\""
+    }
+  ]
+}
