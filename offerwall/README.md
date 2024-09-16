@@ -89,8 +89,8 @@ After configuring the SDK, you can launch the Offerwall using the `Offerwall.lau
 
 ```dart
 ElevatedButton(
-onPressed: () => _offerwallPlugin.launch(),
-child: const Text('Launch Offerwall'),
+  onPressed: () => _offerwallPlugin.launch(),
+  child: const Text('Launch Offerwall'),
 )
 ```
 
