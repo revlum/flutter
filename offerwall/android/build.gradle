@@ -14,15 +14,21 @@ buildscript {
     }
 }
 
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
 allprojects {
     repositories {
+        maven {
+            url = uri("https://sdk-revlum-android.s3.amazonaws.com/")
+            content {
+                includeGroup("com.revlum")
+            }
+        }
         google()
         mavenCentral()
     }
 }
-
-apply plugin: "com.android.library"
-apply plugin: "kotlin-android"
 
 android {
     if (project.android.hasProperty("namespace")) {
@@ -52,6 +58,8 @@ android {
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
+        implementation("com.revlum:offerwall:1.0.1")
+        implementation ("com.google.code.gson:gson:2.10.1")
     }
 
     testOptions {

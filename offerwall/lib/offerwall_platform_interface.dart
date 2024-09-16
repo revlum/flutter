@@ -23,7 +23,23 @@ abstract class OfferwallPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+  Future<void> configure(String apiKey, {String? subId, String? userId}) {
+    throw UnimplementedError('configure() has not been implemented.');
+  }
+
+  Future<void> launch() {
+    throw UnimplementedError('launch() has not been implemented.');
+  }
+
+  Future<void> setUserId(String userId) {
+    throw UnimplementedError('setUserId() has not been implemented.');
+  }
+
+  Future<void> setSubId(String subId) {
+    throw UnimplementedError('setSubId() has not been implemented.');
+  }
+
+  Future<String?> checkReward() {
+    throw UnimplementedError('checkReward() has not been implemented.');
   }
 }

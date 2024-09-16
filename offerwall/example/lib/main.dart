@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -16,35 +17,43 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
   final _offerwallPlugin = Offerwall();
+  late final AppLifecycleListener _listener;
 
   @override
   void initState() {
     super.initState();
-    initPlatformState();
+    initOfferwall();
+    _listener = AppLifecycleListener(
+      onResume: () => _checkRewards(),
+    );
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
-    String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
+  Future<void> _checkRewards() async {
     try {
-      platformVersion =
-          await _offerwallPlugin.getPlatformVersion() ?? 'Unknown platform version';
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      final checkReward = await _offerwallPlugin.checkReward();
+      if (checkReward.offers.isNotEmpty) {
+        if (kDebugMode) {
+          print(
+              'checkReward: reward: ${checkReward.reward}');
+        }
+      }
+    } on PlatformException catch (e) {
+      if (kDebugMode) {
+        print('checkReward error: $e');
+      }
     }
+  }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-    if (!mounted) return;
-
-    setState(() {
-      _platformVersion = platformVersion;
-    });
+  Future<void> initOfferwall() async {
+    try {
+      await _offerwallPlugin.configure(
+          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
+    } on PlatformException catch (e) {
+      if (kDebugMode) {
+        print('configure error: $e');
+      }
+    }
   }
 
   @override
@@ -55,9 +64,25 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text('Running on:'),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () => _offerwallPlugin.launch(),
+                child: const Text('Launch Offerwall'),
+              ),
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _listener.dispose();
+    super.dispose();
   }
 }
