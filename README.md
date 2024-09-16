@@ -72,14 +72,14 @@ Before launching the Offerwall or checking for rewards, configure the SDK by cal
 import 'package:offerwall/offerwall.dart';
 
 Future<void> initOfferwall() async {
-  try {
-    await _offerwallPlugin.configure(
-      apiKey: 'your_api_key', 
-      userId: 'your_user_id'
-    );
-  } on PlatformException catch (e) {
-    print('Error during Offerwall configuration: $e');
-  }
+   try {
+      await _offerwallPlugin.configure(
+              apiKey: 'your_api_key',
+              userId: 'your_user_id'
+      );
+   } on PlatformException catch (e) {
+      print('Error during Offerwall configuration: $e');
+   }
 }
 ```
 
@@ -89,14 +89,14 @@ After configuring the SDK, you can launch the Offerwall using the `Offerwall.lau
 
 ```dart
 ElevatedButton(
-  onPressed: () => _offerwallPlugin.launch(),
-  child: const Text('Launch Offerwall'),
+onPressed: () => _offerwallPlugin.launch(),
+child: const Text('Launch Offerwall'),
 )
 ```
 
 ### 3. Check for rewards
 
-To check if the user has earned any rewards, use the `checkReward` method. This method provides the total reward amount. You also need to handle possible errors with an error callback.
+Check for a reward by using the `checkReward` function. It returns a reward value (which will be 0 if there is no reward) and a list of conversions.
 
 ```dart
 Future<void> _checkRewards() async {
