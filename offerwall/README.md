@@ -64,11 +64,13 @@ allprojects {
 
 ## Usage
 
-### Configure Offerwall
+### 1. Configure the Offerwall
 
-Before launching the Offerwall or checking rewards, you need to configure it using the `configure` method. Provide the API key and user ID.
+Before launching the Offerwall or checking for rewards, configure the SDK by calling the `Offerwall.configure` method. You need to provide the API key and an optional user ID. If you do not provide a user ID, the SDK will automatically generate one, which will be used unless a new user ID is provided.
 
 ```dart
+import 'package:offerwall/offerwall.dart';
+
 Future<void> initOfferwall() async {
   try {
     await _offerwallPlugin.configure(
@@ -76,14 +78,14 @@ Future<void> initOfferwall() async {
       userId: 'your_user_id'
     );
   } on PlatformException catch (e) {
-    print('configure error: $e');
+    print('Error during Offerwall configuration: $e');
   }
 }
 ```
 
-### Launch Offerwall
+### 2. Launch the Offerwall
 
-To display the Offerwall, call the `launch` method after configuration.
+After configuring the SDK, you can launch the Offerwall using the `Offerwall.launch` method. This method does not require additional parameters if the SDK has been correctly configured.
 
 ```dart
 ElevatedButton(
@@ -92,19 +94,19 @@ ElevatedButton(
 )
 ```
 
-### Check for Rewards
+### 3. Check for rewards
 
-You can check for any available rewards by calling the `checkReward` function. It returns a list of offers and the reward amount.
+To check if the user has earned any rewards, use the `checkReward` method. This method provides a list of offers and the total reward amount. If there are no rewards, the reward value will be 0.
 
 ```dart
 Future<void> _checkRewards() async {
   try {
     final checkReward = await _offerwallPlugin.checkReward();
     if (checkReward.offers.isNotEmpty) {
-      print('checkReward: reward: ${checkReward.reward}');
+      print('Reward available: ${checkReward.reward}');
     }
   } on PlatformException catch (e) {
-    print('checkReward error: $e');
+    print('Error during reward check: $e');
   }
 }
 ```
@@ -120,84 +122,84 @@ import 'package:flutter/services.dart';
 import 'package:offerwall/offerwall.dart';
 
 void main() {
-  runApp(const MyApp());
+   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+   const MyApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
+   @override
+   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  final _offerwallPlugin = Offerwall();
-  late final AppLifecycleListener _listener;
+   final _offerwallPlugin = Offerwall();
+   late final AppLifecycleListener _listener;
 
-  @override
-  void initState() {
-    super.initState();
-    initOfferwall();
-    _listener = AppLifecycleListener(
-      onResume: () => _checkRewards(),
-    );
-  }
+   @override
+   void initState() {
+      super.initState();
+      initOfferwall();
+      _listener = AppLifecycleListener(
+         onResume: () => _checkRewards(),
+      );
+   }
 
-  Future<void> _checkRewards() async {
-    try {
-      final checkReward = await _offerwallPlugin.checkReward();
-      if (checkReward.offers.isNotEmpty) {
-        if (kDebugMode) {
-          print('checkReward: reward: ${checkReward.reward}');
-        }
+   Future<void> _checkRewards() async {
+      try {
+         final checkReward = await _offerwallPlugin.checkReward();
+         if (checkReward.offers.isNotEmpty) {
+            if (kDebugMode) {
+               print('Reward available: ${checkReward.reward}');
+            }
+         }
+      } on PlatformException catch (e) {
+         if (kDebugMode) {
+            print('Reward check failed: $e');
+         }
       }
-    } on PlatformException catch (e) {
-      if (kDebugMode) {
-        print('checkReward error: $e');
+   }
+
+   Future<void> initOfferwall() async {
+      try {
+         await _offerwallPlugin.configure(
+                 apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
+      } on PlatformException catch (e) {
+         if (kDebugMode) {
+            print('Offerwall configuration failed: $e');
+         }
       }
-    }
-  }
+   }
 
-  Future<void> initOfferwall() async {
-    try {
-      await _offerwallPlugin.configure(
-          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
-    } on PlatformException catch (e) {
-      if (kDebugMode) {
-        print('configure error: $e');
-      }
-    }
-  }
+   @override
+   Widget build(BuildContext context) {
+      return MaterialApp(
+         home: Scaffold(
+            appBar: AppBar(
+               title: const Text('Offerwall Plugin Example'),
+            ),
+            body: Center(
+               child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                     const Text('Welcome to Revlum Offerwall'),
+                     const SizedBox(height: 20),
+                     ElevatedButton(
+                        onPressed: () => _offerwallPlugin.launch(),
+                        child: const Text('Launch Offerwall'),
+                     ),
+                  ],
+               ),
+            ),
+         ),
+      );
+   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text('Running on:'),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () => _offerwallPlugin.launch(),
-                child: const Text('Launch Offerwall'),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _listener.dispose();
-    super.dispose();
-  }
+   @override
+   void dispose() {
+      _listener.dispose();
+      super.dispose();
+   }
 }
 ```
 
