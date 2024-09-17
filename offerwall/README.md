@@ -18,55 +18,55 @@ The Revlum Offerwall Plugin is a Flutter plugin that wraps the native Revlum Off
 2. **Add Revlum Maven Repository:**
    In your Android project, navigate to your `android/build.gradle` file and ensure that the Revlum Maven repository is added under the `allprojects` section. It should look like this:
 
-```gradle
-allprojects {
-    repositories {
-        maven {
-            url = uri("https://sdk-revlum-android.s3.amazonaws.com/")
-            content {
-                includeGroup("com.revlum")
-            }
-        }
-        google()
-        mavenCentral()
-    }
-}
-```
+   ```gradle
+   allprojects {
+       repositories {
+           maven {
+               url = uri("https://sdk-revlum-android.s3.amazonaws.com/")
+               content {
+                   includeGroup("com.revlum")
+               }
+           }
+           google()
+           mavenCentral()
+       }
+   }
+   ```
 
 ### iOS
 
 1. **Modify AppDelegate.swift:**
    In your `AppDelegate.swift`, update the file to set up a navigation controller. Modify your code to look like this:
 
-```swift
-@main
-@objc class AppDelegate: FlutterAppDelegate {
+   ```swift
+   @main
+   @objc class AppDelegate: FlutterAppDelegate {
 
-    var navigationController: UINavigationController?
+       var navigationController: UINavigationController?
 
-    override func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
-        GeneratedPluginRegistrant.register(with: self)
+       override func application(
+           _ application: UIApplication,
+           didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+       ) -> Bool {
+           GeneratedPluginRegistrant.register(with: self)
 
-        let flutterViewController: FlutterViewController = window?.rootViewController as! FlutterViewController
+           let flutterViewController: FlutterViewController = window?.rootViewController as! FlutterViewController
 
-        navigationController = UINavigationController(rootViewController: flutterViewController)
-        navigationController?.setNavigationBarHidden(true, animated: false)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+           navigationController = UINavigationController(rootViewController: flutterViewController)
+           navigationController?.setNavigationBarHidden(true, animated: false)
+           window?.rootViewController = navigationController
+           window?.makeKeyAndVisible()
 
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions);
-    }
-}
-```
+           return super.application(application, didFinishLaunchingWithOptions: launchOptions);
+       }
+   }
+   ```
 
 ## Usage
 
 ### 1. Configure the Offerwall
 
-Before launching the Offerwall or checking for rewards, configure the SDK by calling the `Offerwall.configure` method. You need to provide the API key and an optional user ID. If you do not provide a user ID, the SDK will automatically generate one, which will be used unless a new user ID is provided.
+Before launching the Offerwall or checking for rewards, configure the SDK by calling the `Offerwall.configure` method. You need to provide the API key and optional parameters like `userId` and `subId`. If you do not provide a user ID, the SDK will automatically generate one. If a user ID is set, it will be used unless manually changed.
 
 ```dart
 import 'package:offerwall/offerwall.dart';
@@ -75,7 +75,8 @@ Future<void> initOfferwall() async {
    try {
       await _offerwallPlugin.configure(
               apiKey: 'your_api_key',
-              userId: 'your_user_id'
+              userId: 'your_user_id',
+              subId: null // Optional, can be set to null
       );
    } on PlatformException catch (e) {
       print('Error during Offerwall configuration: $e');
@@ -89,8 +90,8 @@ After configuring the SDK, you can launch the Offerwall using the `Offerwall.lau
 
 ```dart
 ElevatedButton(
-  onPressed: () => _offerwallPlugin.launch(),
-  child: const Text('Launch Offerwall'),
+onPressed: () => _offerwallPlugin.launch(),
+child: const Text('Launch Offerwall'),
 )
 ```
 
@@ -100,14 +101,14 @@ Check for a reward by using the `checkReward` function. It returns a reward valu
 
 ```dart
 Future<void> _checkRewards() async {
-  try {
-    final checkReward = await _offerwallPlugin.checkReward();
-    if (kDebugMode) {
-      print('Reward: ${checkReward.reward}');
-    }
-  } on PlatformException catch (e) {
-    print('Error during reward check: $e');
-  }
+   try {
+      final checkReward = await _offerwallPlugin.checkReward();
+      if (kDebugMode) {
+         print('Reward: ${checkReward.reward}');
+      }
+   } on PlatformException catch (e) {
+      print('Error during reward check: $e');
+   }
 }
 ```
 
@@ -122,74 +123,76 @@ import 'package:flutter/services.dart';
 import 'package:offerwall/offerwall.dart';
 
 void main() {
-  runApp(const MyApp());
+   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+   const MyApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
+   @override
+   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  final _offerwallPlugin = Offerwall();
-  late final AppLifecycleListener _listener;
+   final _offerwallPlugin = Offerwall();
+   late final AppLifecycleListener _listener;
 
-  @override
-  void initState() {
-    super.initState();
-    initOfferwall();
-    _listener = AppLifecycleListener(
-      onResume: () => _checkRewards(),
-    );
-  }
+   @override
+   void initState() {
+      super.initState();
+      initOfferwall();
+      _listener = AppLifecycleListener(
+         onResume: () => _checkRewards(),
+      );
+   }
 
-  Future<void> _checkRewards() async {
-    try {
-      final checkReward = await _offerwallPlugin.checkReward();
-      if (kDebugMode) {
-        print('Reward: ${checkReward.reward}');
+   Future<void> _checkRewards() async {
+      try {
+         final checkReward = await _offerwallPlugin.checkReward();
+         if (kDebugMode) {
+            print('Reward: ${checkReward.reward}');
+         }
+      } on PlatformException catch (e) {
+         if (kDebugMode) {
+            print('Reward check failed: $e');
+         }
       }
-    } on PlatformException catch (e) {
-      if (kDebugMode) {
-        print('Reward check failed: $e');
+   }
+
+   Future<void> initOfferwall() async {
+      try {
+         await _offerwallPlugin.configure(
+                 apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1',
+                 userId: 'Revlum',
+                 subId: null); // Optional, can be set to null
+      } on PlatformException catch (e) {
+         if (kDebugMode) {
+            print('Offerwall configuration failed: $e');
+         }
       }
-    }
-  }
+   }
 
-  Future<void> initOfferwall() async {
-    try {
-      await _offerwallPlugin.configure(
-          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
-    } on PlatformException catch (e) {
-      if (kDebugMode) {
-        print('Offerwall configuration failed: $e');
-      }
-    }
-  }
+   @override
+   Widget build(BuildContext context) {
+      return MaterialApp(
+         home: Scaffold(
+            appBar: AppBar(
+               title: const Text('Plugin example app'),
+            ),
+            body: Center(
+               child: ElevatedButton(
+                  onPressed: () => _offerwallPlugin.launch(),
+                  child: const Text('Launch Offerwall'),
+               ),
+            ),
+         ),
+      );
+   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () => _offerwallPlugin.launch(),
-            child: const Text('Launch Offerwall'),
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _listener.dispose();
-    super.dispose();
-  }
+   @override
+   void dispose() {
+      _listener.dispose();
+      super.dispose();
+   }
 }
 ```

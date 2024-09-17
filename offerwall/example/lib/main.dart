@@ -45,7 +45,9 @@ class _MyAppState extends State<MyApp> {
   Future<void> initOfferwall() async {
     try {
       await _offerwallPlugin.configure(
-          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1', userId: 'Revlum');
+          apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1',
+          userId: 'Revlum',
+          subId: null);
     } on PlatformException catch (e) {
       if (kDebugMode) {
         print('configure error: $e');
