@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'offerwall'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Flutter plugin for integrating the Revlum Offerwall SDK.'
   s.description      = <<-DESC
 Flutter plugin that allows developers to easily configure and launch an offerwall on Android and iOS, enabling users to earn rewards through engaging offers.

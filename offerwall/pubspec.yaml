@@ -1,6 +1,6 @@
 name: offerwall
 description: "Flutter plugin for integrating the Revlum Offerwall SDK. Easily configure and launch an offerwall on Android and iOS, allowing users to earn rewards through engaging offers."
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/revlum/flutter.git
 
 environment:
