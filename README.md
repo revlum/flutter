@@ -1,6 +1,6 @@
 # Revlum Offerwall Plugin
 
-[![pub package](https://img.shields.io/pub/v/revlum_offerwall.svg)](https://pub.dev/packages/revlum_offerwall)
+[![pub package](https://img.shields.io/pub/v/offerwall.svg)](https://pub.dev/packages/offerwall)
 
 The Revlum Offerwall Plugin is a Flutter plugin that wraps the native Revlum Offerwall SDK implementations for both Android and iOS. For more details on the native implementations, you can refer to the official documentation for [iOS](https://developer.revlum.com/docs/ios) and [Android](https://developer.revlum.com/docs/revlum-android-sdk).
 
