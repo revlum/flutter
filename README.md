@@ -76,7 +76,7 @@ Future<void> initOfferwall() async {
       await _offerwallPlugin.configure(
               apiKey: 'your_api_key',
               userId: 'your_user_id',
-              subId: null // Optional, can be set to null
+              subId: null
       );
    } on PlatformException catch (e) {
       print('Error during Offerwall configuration: $e');
@@ -164,7 +164,7 @@ class _MyAppState extends State<MyApp> {
          await _offerwallPlugin.configure(
                  apiKey: 'wpvnaqodiv6lc9nsm6mw16ds8yo5x1',
                  userId: 'Revlum',
-                 subId: null); // Optional, can be set to null
+                 subId: null);
       } on PlatformException catch (e) {
          if (kDebugMode) {
             print('Offerwall configuration failed: $e');
