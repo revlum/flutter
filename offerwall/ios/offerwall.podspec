@@ -5,13 +5,13 @@
 Pod::Spec.new do |s|
   s.name             = 'offerwall'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.summary          = 'Flutter plugin for integrating the Revlum Offerwall SDK.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+Flutter plugin that allows developers to easily configure and launch an offerwall on Android and iOS, enabling users to earn rewards through engaging offers.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://revlum.com'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Revlum' => 'hello@revlum.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
