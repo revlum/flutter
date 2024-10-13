@@ -25,7 +25,7 @@ public class OfferwallPlugin: NSObject, FlutterPlugin {
             
         case "launch":
             if let navigationController = UIApplication.shared.delegate?.window??.rootViewController as? UINavigationController {
-                let offerwallView = RevlumOfferwallSdk.getOfferwallView()
+                let offerwallView = RevlumOfferwallSdk.shared.offerwallView
                 
                 if #available(iOS 13.0, *) {
                     let hostingController = UIHostingController(rootView: offerwallView)

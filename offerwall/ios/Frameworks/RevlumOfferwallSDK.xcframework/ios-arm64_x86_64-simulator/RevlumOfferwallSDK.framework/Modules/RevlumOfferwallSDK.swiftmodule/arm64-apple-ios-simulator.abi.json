@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "RevlumOfferwallSDK",
+    "printedName": "RevlumOfferwallSDK",
     "children": [
       {
         "kind": "Import",
@@ -98,6 +98,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
         "declKind": "Import",
         "moduleName": "RevlumOfferwallSDK",
         "declAttributes": [
@@ -227,6 +237,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -342,6 +366,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -461,6 +499,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -578,6 +630,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -590,6 +656,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RevlumOfferwallSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -648,6 +724,7 @@
             "mangledName": "$s18RevlumOfferwallSDK0B4ViewV4bodyQrvp",
             "moduleName": "RevlumOfferwallSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -686,11 +763,26 @@
         "moduleName": "RevlumOfferwallSDK",
         "intro_Macosx": "12.0",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "Available"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "View",
@@ -719,17 +811,14 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "RevlumOfferwallSDK",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -1012,6 +1101,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1387,6 +1490,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1444,6 +1561,56 @@
             "declKind": "EnumElement",
             "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO07missingdE4DatayA2CmF",
             "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO07missingdE4DatayA2CmF",
+            "moduleName": "RevlumOfferwallSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "offerwallNeverLaunched",
+            "printedName": "offerwallNeverLaunched",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RevlumOfferwallSDK.CheckRewardError.Type) -> (Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> RevlumOfferwallSDK.CheckRewardError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RevlumOfferwallSDK.CheckRewardError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CheckRewardError",
+                        "printedName": "RevlumOfferwallSDK.CheckRewardError",
+                        "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18RevlumOfferwallSDK16CheckRewardErrorO22offerwallNeverLaunchedyACSScACmF",
+            "mangledName": "$s18RevlumOfferwallSDK16CheckRewardErrorO22offerwallNeverLaunchedyACSScACmF",
             "moduleName": "RevlumOfferwallSDK"
           },
           {
@@ -1642,6 +1809,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -1879,9 +2060,9 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "getOfferwallView",
-            "printedName": "getOfferwallView()",
+            "kind": "Var",
+            "name": "offerwallView",
+            "printedName": "offerwallView",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1890,16 +2071,37 @@
                 "usr": "s:18RevlumOfferwallSDK0B4ViewV"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:18RevlumOfferwallSDK0aB3SdkC03getB4ViewAA0bF0VyFZ",
-            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC03getB4ViewAA0bF0VyFZ",
+            "declKind": "Var",
+            "usr": "s:18RevlumOfferwallSDK0aB3SdkC13offerwallViewAA0bF0Vvp",
+            "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC13offerwallViewAA0bF0Vvp",
             "moduleName": "RevlumOfferwallSDK",
-            "static": true,
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferwallView",
+                    "printedName": "RevlumOfferwallSDK.OfferwallView",
+                    "usr": "s:18RevlumOfferwallSDK0B4ViewV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RevlumOfferwallSDK0aB3SdkC13offerwallViewAA0bF0Vvg",
+                "mangledName": "$s18RevlumOfferwallSDK0aB3SdkC13offerwallViewAA0bF0Vvg",
+                "moduleName": "RevlumOfferwallSDK",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -2065,189 +2267,198 @@
           "Final",
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/CoreConstants.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/CoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 186,
       "length": 30,
       "value": "\"https:\/\/revlum.com\/offerwall\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
       "kind": "StringLiteral",
       "offset": 1202,
       "length": 21,
       "value": "\"https:\/\/revlum.com\/\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
       "kind": "StringLiteral",
       "offset": 1276,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Clients\/ApiClient.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Services\/InternetConnectionServiceImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
-      "length": 5,
-      "value": "\"GET\""
+      "offset": 331,
+      "length": 16,
+      "value": "\"NetworkMonitor\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 850,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Data\/Utils\/Extensions\/UrlSessionExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 856,
       "length": 3,
       "value": "299"
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ClientError.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ClientError.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/NetworkError.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/NetworkError.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ServerError.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/ServerError.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/UnknownError.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Domain\/Errors\/UnknownError.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Presentation\/CorePresentationConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 27,
+      "value": "\"https:\/\/revlum.com\/offer\/\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Presentation\/CorePresentationConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 15,
+      "value": "\"webViewGoBack\""
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Presentation\/Views\/OfferwallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 444,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Presentation\/Views\/OfferwallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Core\/Presentation\/Views\/OfferwallView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3428,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/BalanceDataConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
       "kind": "StringLiteral",
       "offset": 404,
       "length": 13,
       "value": "\"DAILY_COUNT\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 19,
       "value": "\"LAST_REQUEST_TIME\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
       "kind": "StringLiteral",
       "offset": 507,
       "length": 27,
       "value": "\"SLIDING_WINDOW_START_TIME\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 404,
-      "length": 13,
-      "value": "\"DAILY_COUNT\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 449,
-      "length": 19,
-      "value": "\"LAST_REQUEST_TIME\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/DataSources\/BalanceLocalDataSourceImpl.swift",
-      "kind": "StringLiteral",
-      "offset": 507,
-      "length": 27,
-      "value": "\"SLIDING_WINDOW_START_TIME\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/CheckRewardResponse.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/CheckRewardResponse.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 13,
       "value": "\"conversions\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/CheckRewardResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 471,
-      "length": 13,
-      "value": "\"conversions\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 10,
       "value": "\"offer_id\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
       "kind": "StringLiteral",
       "offset": 531,
       "length": 16,
       "value": "\"transaction_id\""
     },
     {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 431,
-      "length": 10,
-      "value": "\"offer_id\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/Balance\/Data\/Models\/OfferResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 16,
-      "value": "\"transaction_id\""
-    },
-    {
-      "filePath": "\/Users\/mkovacevic\/iOSProjects\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/User\/Data\/DataSources\/UserLocalDataSourceImpl.swift",
+      "filePath": "\/Users\/mkovacevic\/iOSProjects\/revlum_ios_sdk\/ios-sdk\/RevlumOfferwallSDK\/Sources\/RevlumOfferwallSDK\/Features\/User\/Data\/DataSources\/UserLocalDataSourceImpl.swift",
       "kind": "StringLiteral",
       "offset": 251,
       "length": 9,
