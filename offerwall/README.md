@@ -79,7 +79,9 @@ Future<void> initOfferwall() async {
               subId: null
       );
    } on PlatformException catch (e) {
-      print('Error during Offerwall configuration: $e');
+      if (kDebugMode) {
+        print('Error during Offerwall configuration: $e');
+      }
    }
 }
 ```
@@ -90,8 +92,8 @@ After configuring the SDK, you can launch the Offerwall using the `Offerwall.lau
 
 ```dart
 ElevatedButton(
-onPressed: () => _offerwallPlugin.launch(),
-child: const Text('Launch Offerwall'),
+  onPressed: () => _offerwallPlugin.launch(),
+  child: const Text('Launch Offerwall'),
 )
 ```
 
@@ -107,7 +109,9 @@ Future<void> _checkRewards() async {
          print('Reward: ${checkReward.reward}');
       }
    } on PlatformException catch (e) {
-      print('Error during reward check: $e');
+      if (kDebugMode) {
+        print('Error during reward check: $e');
+      }
    }
 }
 ```
