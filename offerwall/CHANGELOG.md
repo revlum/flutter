@@ -1,3 +1,8 @@
+## 0.0.5
+
+* Removed navigation inside the WebView for a cleaner user experience.
+* Fixed the issue with launching external links to ensure they open correctly in the browser.
+
 ## 0.0.4
 
 * Updated Android and iOS plugin dependencies for better compatibility and performance.
